@@ -62,6 +62,62 @@ fun isEven(number:Int):Boolean{  //task 2.4
 println(isEven(5))
 
 //===SECTION 3===//
+println("===SECTION 3:CONDITIONAL STATEMENTS===")
+fun temperature(temp:Int):String{ //task 3.1//
+    if (temp>30){
+        return "Hot day"
+    }else if(temp>=20){
+        return "Perfect day"
+    }else {
+        return "Cool day"
+    }
+}
+
+    println(temperature(28))
+
+var dayOfWeek = "Monday" //task 3.2//
+
+when(dayOfWeek){
+    "Saturday","Sunday"->println("Weekend! Time to relax")
+    "Monday"->println("Back to work")
+    "Friday"->println("TGIF!")
+    else->println("Regular weekday")
+}
+    
+
+val trafficLight = "RED"  //task 3.3//
+when(trafficLight){
+    "RED" -> println("STOP")
+    "YELLOW" -> println("CAUTION")
+    "GREEN" -> println("GO")
+    else -> println("INVALID")
+}
+
+
+//SECTION 4//
+println("===SECTION 4:LOOPS===") //task 4.1
+var start = 1
+while(start<=10){
+    println(start)
+    start++
+}
+println("================================================================")
+var X = 5           //task 4.2//
+fun countdown(){
+    do{
+    println("Countdown:"+X--)
+    
+}while (X>=1)
+}
+countdown()
+println("Blastoff")
+println("============================================================")
+val shoppingList = listOf("Milk","Eggs","Bread","Butter","Coffee") //task 4.3//
+var index=1
+for(shoppingList in shoppingList){
+    println("[$index]"+shoppingList)
+    index++
+    }
 
 
 }
