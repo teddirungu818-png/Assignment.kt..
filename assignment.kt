@@ -118,6 +118,36 @@ for(shoppingList in shoppingList){
     println("[$index]"+shoppingList)
     index++
     }
+for(i in 1..20){  //*inclusive//        //task 4.4//
+    print("$i ")
+}
+println(" ")
+for(x in 1 until 20){  //*excluding//
+    print("$x ")
+}
+println(" ")
+for(e in 2..20){
+    if(e% 2 == 0){
+        print("$e ")
+    }
+}
+println(" ")
+for(l in 'A'..'Z'){
+    print("$l ")
+}
+println(" ")
+//SECTION 5:STATEMENT VS EXPRESSION//      //task 5.1//
+println("""A statement gives information based on the 'state' of the data.If certain 
+conditions are met then there will be an outcome while an expression takes 
+in data and gives a final outcome. """)
+var age=17                                  //task 5.2//
+val status= if(age>=10)"Adult"else"Minor"
+println(status)
+
+var a=126890                        //task 5.3
+var b=569143
+val maxNumber=if(a>b)"a" else "b"
+println(maxNumber)
 
 
 }
